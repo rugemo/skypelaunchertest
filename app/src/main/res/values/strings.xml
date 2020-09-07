@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Skype Launcher Test</string>
+    <string name="launch_skype_using_package_manager">Launch Skype using intent provided by getPackageManager().getLaunchIntentForPackage()</string>
+    <string name="launch_skype_using_intent_offical_guide">Launch Skype using intent with component detailed in official tutorial. \n\n  https://docs.microsoft.com/en-us/skype-sdk/skypeuris/skypeuritutorial_androidapps</string>
+    <string name="launch_skype">Launch Skype</string>
+    <string name="install_skype">Install Skype</string>
+    <string name="please_install_skype">Please install skype to continue.</string>
+    <string name="error_title">Error</string>
+</resources>
