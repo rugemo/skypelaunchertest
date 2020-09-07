@@ -23,7 +23,13 @@ class MainActivity : AppCompatActivity() {
             intent.action = Intent.ACTION_VIEW
             intent.data = Uri.parse("skype:" + "live:echo123" + "?chat")
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            startActivity(intent)
+            try {
+                startActivity(intent)
+            } catch(exception: ActivityNotFoundException) {
+                error_view_title.visibility = View.VISIBLE
+                error_view_body.visibility = View.VISIBLE
+                error_view_body.text = exception.message
+            }
         }
 
         tut_skype_button.setOnClickListener {
